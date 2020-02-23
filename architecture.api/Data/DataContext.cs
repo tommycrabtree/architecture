@@ -1,11 +1,12 @@
-using architecture.API.Models;
+using architecture.api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace architecture.API.Data
+namespace architecture.api.Data
 {
     public class DataContext : DbContext
     {
             public DataContext(DbContextOptions<DataContext> options) : base(options) { }
             public DbSet<Value> Values { get; set; }
+            public DbSet<User> Users { get; set; }
     }
 }

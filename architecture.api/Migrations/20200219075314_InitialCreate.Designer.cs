@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using architecture.API.Data;
+using architecture.api.Data;
 
-namespace architecture.API.Migrations
+namespace architecture.api.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20200219075314_InitialCreate")]
@@ -17,7 +17,7 @@ namespace architecture.API.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.0.0");
 
-            modelBuilder.Entity("architecture.API.Models.Value", b =>
+            modelBuilder.Entity("architecture.api.Models.Value", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
